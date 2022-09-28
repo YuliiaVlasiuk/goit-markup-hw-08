@@ -101,6 +101,19 @@ img {
   color: var(--main-text-color);
 }
 
+.section--second-backgraund-color {
+  background-color: var(--second-backgraund-color);
+}
+
+.section__title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .button {
   font-family: inherit;
   color: var(--white-color);
@@ -369,20 +382,25 @@ img {
   color: var(--white-color);
 }
 
-.team {
-  display: flex;
-  gap: 30px;
-}
-
 .team__item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
+  height: 622px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__img {
+  width: 450px;
+  height: 460px;
 }
 
 .team__card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__title {
