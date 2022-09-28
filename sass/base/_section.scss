@@ -1,0 +1,21 @@
+.section {
+    @include section;
+    color: var(--main-text-color);
+}
+
+.section--second-backgraund-color {
+    background-color: var(--second-backgraund-color);
+}
+
+.section__title {
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section--without-top-padding {
+    @include section(0, 94px);
+}
