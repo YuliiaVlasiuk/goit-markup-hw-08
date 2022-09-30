@@ -984,14 +984,14 @@ img {
   outline: 1px solid var(--blue-color);
   fill: var(--blue-color);
 }
-@media screen and (max-width: 479px) {
-  .cooperation__link {
-    width: 110px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .cooperation__link {
     width: 210px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cooperation__link {
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
