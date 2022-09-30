@@ -542,14 +542,24 @@ img {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
   background-color: var(--white-color);
   border-radius: 4px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1999px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-btn {
@@ -705,10 +715,16 @@ img {
 
 .polici {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--grey-color);
+}
+@media screen and (min-width: 1199px) {
+  .polici {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .footer {
