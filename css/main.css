@@ -110,6 +110,17 @@ img {
   }
 }
 
+.section--without-top-padding {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section--without-top-padding {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}
+
 .button {
   font-family: inherit;
   color: var(--white-color);
@@ -155,13 +166,18 @@ img {
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  display: none;
 }
-.nav__list {
-  display: flex;
-  gap: 50px;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav__list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
 }
 
 .nav__link {
@@ -296,10 +312,15 @@ img {
 }
 
 .contacts {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .contacts__link {
@@ -737,11 +758,25 @@ img {
 .footer__container {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
     align-items: baseline;
     text-align: start;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer-tablets {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
   }
 }
 
@@ -759,10 +794,10 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .comming {
-    margin-left: 70px;
-    margin-right: 93px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -1003,15 +1038,15 @@ img {
 }
 @media screen and (max-width: 479px) {
   .cooperation__link {
-    width: 130px;
+    min-width: 130px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .cooperation__link {
     width: 210px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .cooperation__link {
     width: 226px;
   }

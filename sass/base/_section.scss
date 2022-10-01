@@ -22,5 +22,13 @@
 }
 
 .section--without-top-padding {
-    // @include section(0, 94px);
+    display: none;
+
+    @media screen and(min-width:1200px) {
+       display:block;
+       @include section(0, 94px);
+    }
+
+
+   
 }
