@@ -1,31 +1,29 @@
 .nav {
     display: none;
 
-     @media screen and (min-width:768px){
-        
-    display: flex;
-    align-items: center;
+    @media screen and (min-width:768px) {
 
-    &__list {
         display: flex;
-        gap: 50px;
         align-items: center;
+
+        &__list {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
     }
-     }
 }
 
 .nav__link {
-    display: block;
     color: var(--main-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
-    text-decoration: none;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color 250ms var(--timing-function);
+    display: block;
+    margin-bottom: 30px;
+
 
     &:hover,
     &:focus {
@@ -36,18 +34,56 @@
     &--current {
         color: var(--blue-color);
         position: relative;
+        margin-bottom: 36px;
     }
 
-    &--current::after {
-        content: "";
+
+
+    @media screen and(min-width:768px) {
+
         display: block;
-        width: 100%;
-        height: 4px;
-        background-color: rgba(33, 150, 243, 1);
-        border-radius: 2px;
-        position: absolute;
-        bottom: -3px;
-        left: 0;
+        font-size: 14px;
+        line-height: 1.14;
+
+        text-decoration: none;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color 250ms var(--timing-function);
+        margin-bottom: 0;
+
+        &--current::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: rgba(33, 150, 243, 1);
+            border-radius: 2px;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+        }
     }
 
+}
+
+.menu__number{
+    display: block;
+    color:var(--blue-color);
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    @media screen and (max-width:372px){
+        font-size: 25px;
+    }
+    
+}
+.menu__email{
+    display: block;
+    color:var(--grey-color);
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    margin-bottom: 64px;
 }

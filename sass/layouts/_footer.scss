@@ -23,11 +23,21 @@
 }
 
 .footer-tablets{
+
 	@media screen and (min-width:767px) and (max-width:1199px){
-			display: flex;
+		display: flex;
 			justify-content: space-evenly;
 			margin-bottom: 60px;
 		}
+  @media screen and (min-width:1200px){
+	display: flex;
+	justify-content:flex-start;
+
+  }
+
+					
+				
+
 }
 // .footer__contact {
 
@@ -56,13 +66,13 @@
 		margin-left: 0px;
         margin-right: 0px;
 	}
-
 	
-	// @media screen and (min-width:1199px) {
-	// 	margin-left: 70px;
-    //     margin-right: 93px;
+	
+	@media screen and (min-width:1199px) {
+	 margin-left: 70px;
+    margin-right: 93px;
 
-	// }
+	}
 
 }
 
