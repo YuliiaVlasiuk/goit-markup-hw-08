@@ -1,5 +1,5 @@
 .section {
-    @include section (60px,60px);
+    @include section (60px, 60px);
     color: var(--main-text-color);
 }
 
@@ -15,9 +15,9 @@
     text-align: center;
     margin-bottom: 30px;
 
-@media screen  and(min-width:1200px){
-    font-size: 36px;
-  }
+    @media screen and(min-width:1200px) {
+        font-size: 36px;
+    }
 
 }
 

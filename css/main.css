@@ -533,6 +533,7 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1000,7 +1001,12 @@ img {
   outline: 1px solid var(--blue-color);
   fill: var(--blue-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .cooperation__link {
+    width: 130px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .cooperation__link {
     width: 210px;
   }
