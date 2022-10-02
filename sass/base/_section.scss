@@ -1,6 +1,16 @@
 .section {
-    @include section (60px, 60px);
     color: var(--main-text-color);
+
+@media screen and (max-width:767px){
+    @include section (36px, 36px);
+}
+@media screen and (min-width:767px) and (max-width:1199px){
+    @include section (60px, 60px);
+}
+@media screen and (min-width:1200px) {
+    @include section (94px, 94px);
+}
+  
 }
 
 .section--second-backgraund-color {

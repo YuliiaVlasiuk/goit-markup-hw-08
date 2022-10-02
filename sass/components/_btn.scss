@@ -24,4 +24,10 @@
 	&:focus {
 		background-color: #188ce8;
 	}
+
+@media screen  and(max-width:479px ){
+
+	font-size: 15px;
+}
+
 }
