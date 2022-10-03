@@ -529,6 +529,7 @@ img {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 360px;
 }
 @media screen and (max-width: 430px) {
   .hero__title {
@@ -538,6 +539,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
+    width: 696px;
   }
 }
 
