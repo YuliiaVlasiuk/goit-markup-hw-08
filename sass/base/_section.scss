@@ -1,16 +1,11 @@
 .section {
     color: var(--main-text-color);
-
-@media screen and (max-width:767px){
-    @include section (36px, 36px);
-}
-@media screen and (min-width:767px) and (max-width:1199px){
     @include section (60px, 60px);
-}
-@media screen and (min-width:1200px) {
-    @include section (94px, 94px);
-}
-  
+
+    @media screen and (min-width:1200px) {
+        @include section (94px, 94px);
+    }
+
 }
 
 .section--second-backgraund-color {
@@ -27,7 +22,10 @@
 
     @media screen and(min-width:1200px) {
         font-size: 36px;
+        margin-bottom: 50px;
     }
+
+
 
 }
 
@@ -35,10 +33,10 @@
     display: none;
 
     @media screen and(min-width:1200px) {
-       display:block;
-       @include section(0, 94px);
+        display: block;
+        @include section(0, 94px);
     }
 
 
-   
+
 }

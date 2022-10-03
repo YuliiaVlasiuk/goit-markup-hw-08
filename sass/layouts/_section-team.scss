@@ -13,15 +13,16 @@
 	border-radius: 0px 0px 4px 4px;
 
 	max-width: 450px;
-	// max-height: 622px;
 
+	@media screen and (max-width: 767px){
 	&:not(:last-child){
 		margin-bottom:30px;
-	}
+	}}
   
     @media screen and (min-width: 768px){
     width: 354px;
-     height: 536px;}
+     height: 536px;
+	}
 	
 	@media screen and (min-width: 1200px){
 		width: 270px;
